@@ -5,7 +5,7 @@ toolbox文件内容加密
 1. 部署:
   - 安装Java的jre-[Java](https://www.java.com/)  
 2. 运行:
-  - 在Toolbox.jar所在目录下添加logs目录文件,在版本发布中下载
+  - 在Toolbox.jar所在目录下创建logs目录并在logs目录创建data目录并在data目录下创建journal.log文件
   - 在Toolbox.jar所在目录打开终端输入命令:
 ```
  java -jar Toolbox.jar
