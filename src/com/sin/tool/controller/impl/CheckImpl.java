@@ -18,7 +18,7 @@ public class CheckImpl implements ICheck {
     @Override
     public boolean seeAssign() {
         long startTime = System.currentTimeMillis(); //获取开始时间
-        final String path="src/com/sin/tool/data/journal.log";
+        final String path="logs/data/journal.log";
         File file = new File(path);
         HashMap<String, String> map = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
@@ -52,7 +52,7 @@ public class CheckImpl implements ICheck {
     @Override
     public boolean see(){
         long startTime = System.currentTimeMillis(); //获取开始时间
-        final String path="src/com/sin/tool/data/journal.log";
+        final String path="logs/data/journal.log";
         File file = new File(path);
         try {
             if (file.exists()){
@@ -84,7 +84,7 @@ public class CheckImpl implements ICheck {
     @Override
     public boolean delete() {
         long startTime = System.currentTimeMillis(); //获取开始时间
-        final String path="src/com/sin/tool/data/journal.log";
+        final String path="logs/data/journal.log";
         File file = new File(path);
         if (file.exists()){
             boolean b = file.delete();

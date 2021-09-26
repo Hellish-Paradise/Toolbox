@@ -24,7 +24,7 @@ public class controllerLogs extends Thread{
             Date date = new Date();
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd~E~HH:mm:ss:ms");
             modelLogs logs = new modelLogs(sdf.format(date),s);
-            final String path="src/com/sin/tool/data/journal.log";
+            final String path= "logs/data/journal.log";
             File file = new File(path);
             if (file.exists()){
                 try {
