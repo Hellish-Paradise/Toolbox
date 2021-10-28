@@ -200,7 +200,7 @@ public class SignatureImpl implements ISignature {
             long startTime = System.currentTimeMillis(); //获取开始时间
             // 生成RSA公钥/私钥:
             KeyPairGenerator kpGen = KeyPairGenerator.getInstance("RSA");
-            kpGen.initialize(1024);
+            kpGen.initialize(1024, new SecureRandom());
             KeyPair kp = kpGen.generateKeyPair();
             PrivateKey sk = kp.getPrivate();
 //            System.out.println("私"+sk);
